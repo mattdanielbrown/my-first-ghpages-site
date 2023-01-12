@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+/** SCSS Variable Declarations & Definitions **/
+$fallback-fontstack : system-sans-serif, sysstem-ui, -apple-system,
+BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial,
+sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+'Segoe UI Symbol';
+
+$inter              : 'Inter UI', 'Inter', Inter UI, Inter, 'inter ui', inter ui,
+inter, 'inter';
+
+$primary-fontstack  : $inter, $fallback-fontstack;
+$fontstack          : $primary-fontstack;
+$font-family        : $primary-fontstack;
+
+//------------------------------------------------------------------------------
+// Color Primitives
+//------------------------------------------------------------------------------
+
+$_color-indigo      : #617ef2;
+$_color-violet      : #845ef7;
+$_color-red         : #ff6b6b;
+$_color-green       : #51cf66;
+$_color-orange      : #ff922b;
+$_color-gray8       : #343a40;
+
+/// @source: OpenColor (https://yeun.github.io/open-color)
+
+//------------------------------------------------------------------------------
+// Theme Colors
+//------------------------------------------------------------------------------
+
+$primary-color      : $_color-indigo !default;
+$secondary-color    : $_color-gray8 !default;
+$success-color      : $_color-green !default;
+$warning-color      : $_color-orange !default;
+$danger-color       : $_color-red !default;
+
+$txt-color          : #434343 !default;
+$bg-color           : #fff !default;
+$bg-color--alt      : ghostwhite !default;
+
+$base-fontsize      : 1.125em !default;
+
+$transition         : all 120ms ease-out !default;
+
+//------------------------------------------------------------------------------
+// Breakpoints
+//------------------------------------------------------------------------------
+
+$screen-width--zero : 0px;
+$screen-width--0    : 0px;
+$screen-width--300  : 300px;
+$screen-width--320  : 320px;
+$screen-width--400  : 400px;
+$screen-width--480  : 480px;
+$screen-width--560  : 560px;
+$screen-width--600  : 600px;
+$screen-width--640  : 640px;
+$screen-width--720  : 720px;
+$screen-width--768  : 768px;
+$screen-width--960  : 960px;
+$screen-width--1024 : 1024px;
+$screen-width--1200 : 1200px;
+$screen-width--1280 : 1280px;
+$screen-width--1400 : 1400px;
+
+$breakpoint-zero    : $screen-width--0;
+$breakpoint-min     : $screen-width--300;
+$breakpoint-xs      : $screen-width--320;
+$breakpoint-sm      : $screen-width--480;
+$breakpoint-md      : $screen-width--768;
+$breakpoint-lg      : $screen-width--1024;
+$breakpoint-xl      : $screen-width--1280;
+$breakpoint-max     : $screen-width--1400;
+
+:root {
+	--fontstack          : var(--inter), var(--fallback-fontstack);
+	
+	--inter              : 'Inter UI', 'Inter', Inter UI, Inter, 'inter ui', inter ui, inter, 'inter';
+	
+	--transition         : all 120ms ease-out;
+	--bg-color           : #fff;
+	--danger-color       : var(--color-red);
+	
+	--primary-color      : var(--color-indigo);
+	--secondary-color    : var(--color-gray8);
+	--success-color      : var(--color-green);
+	
+	--txt-color          : #434343;
+	--warning-color      : var(--color-orange);
+	--bg-color--alt      : ghostwhite;
+	--font-family        : var(--inter), var(--fallback-fontstack);
+	--base-fontsize      : 1.125em;
+	--fallback-fontstack : system-sans-serif, sysstem-ui, -apple-system,
+	BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+	'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	
+	--primary-fontstack  : var(--inter), var(--fallback-fontstack);
+	--color-gray8        : #343a40;
+	--color-green        : #51cf66;
+	--color-indigo       : #617ef2;
+	--color-orange       : #ff922b;
+	
+	--color-red          : #ff6b6b;
+	--color-violet       : #845ef7;
+	
+}

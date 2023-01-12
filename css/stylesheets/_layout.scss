@@ -1,0 +1,30 @@
+
+%container {
+	margin    : 0 auto;
+	max-width : 65ch;
+	max-width : 768px;
+	width     : 92%;
+}
+
+.container, section, article, hgroup {
+	@extend %container;
+}
+
+
+html, body {
+	/* text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important; */
+	background-color : $bg-color;
+	color            : $txt-color;
+	font-family      : $primary-fontstack;
+	height           : 100%                                            !important;
+	margin           : 0                                               !important;
+	max-width        : 100vw                                           !important;
+	min-height       : 100vh                                           !important;
+	min-width        : 300px;
+	overflow-x       : hidden;
+	padding          : 0                                               !important;
+	position         : relative;
+	width            : 100%;
+}

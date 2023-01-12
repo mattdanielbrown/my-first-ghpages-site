@@ -1,0 +1,15 @@
+
+
+
+
+@mixin screen-min-width($minimum-width: 640px) {
+	@media screen and (min-width: $minimum-width) {
+		@content;
+	}
+}
+
+@mixin screen-max-width($maximum-width: 640px) {
+	@media screen and (max-width: ($maximum-width - 1px)) {
+		@content;
+	}
+}

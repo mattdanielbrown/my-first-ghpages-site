@@ -1,0 +1,29 @@
+
+html {
+	// font-size        : var(--base-fontsize);
+	//noinspection CssInvalidPropertyValue
+	font-size-adjust : 100%;
+}
+
+html,body {
+	line-height : 1;
+	font-family : $font-family;
+	font-weight : normal;
+}
+
+body {
+	font-size : 1em;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	display : block;
+	width : 100%;
+	small {
+		display : block;
+		width : 100%;
+		line-height : inherit;
+		margin : .5rem auto;
+		font-size : smaller !important;
+	}
+}
